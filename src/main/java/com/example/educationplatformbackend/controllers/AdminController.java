@@ -38,6 +38,7 @@ public class AdminController {
     public Admin updateAdmin(@RequestBody Admin admin,@PathVariable Long id){
         return adminService.updateAdmin(admin,id);
     }
+
     @PutMapping("/adminId/{adminId}/students/{studentId}")
     Admin enrollStudentToAdmin(
             @PathVariable Long adminId,
